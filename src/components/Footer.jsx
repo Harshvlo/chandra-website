@@ -141,10 +141,7 @@ export default function Footer() {
           <div className="footer-disclaimer">
             <FiShield className="disclaimer-icon" aria-hidden="true" />
             <p>
-              Cloudefusion Technologies provides training, guidance, and career
-              support services. We do not guarantee job placement or
-              certification outcomes. Results may vary based on individual
-              effort and market conditions.
+              Cloudffusion Technologies provides expert training, certification support, and career guidance services. We offer comprehensive assistance throughout the certification process and are committed to helping candidates achieve successful outcomes. Results may vary depending on individual engagement and certification provider requirements.
             </p>
           </div>
 
