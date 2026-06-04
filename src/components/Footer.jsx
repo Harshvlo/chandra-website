@@ -138,7 +138,7 @@ export default function Footer() {
           <div className="footer-disclaimer">
             <FiShield className="disclaimer-icon" aria-hidden="true" />
             <p>
-              TalentStack Technologies provides training, guidance, and career
+              Cloudefusion Technologies provides training, guidance, and career
               support services. We do not guarantee job placement or
               certification outcomes. Results may vary based on individual
               effort and market conditions.
@@ -150,7 +150,7 @@ export default function Footer() {
           {/* ── Bottom bar ── */}
           <div className="footer-bottom">
             <span className="footer-copyright">
-              © {new Date().getFullYear()} TalentStack Technologies. All rights reserved.
+              © {new Date().getFullYear()} Cloudefusion Technologies. All rights reserved.
             </span>
             <div className="footer-links">
               {LEGAL_LINKS.map((l) => (
