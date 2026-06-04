@@ -1,93 +1,8 @@
 import "../../css/Technologies.css";
 import { motion } from "framer-motion";
+import { TECHS } from "../../data/Data";
+import { FiArrowRight } from "react-icons/fi";
 
-import {
-  FaJava,
-  FaAws,
-  FaMicrosoft,
-  FaDocker
-} from "react-icons/fa";
-
-import {
-  SiMulesoft,
-  SiSalesforce,
-  SiTestinglibrary,
-  SiDotnet,
-} from "react-icons/si";
-
-import { FaChartPie } from "react-icons/fa";
-
-import {
-  MdDataObject,
-  MdOutlineAutoGraph
-} from "react-icons/md";
-
-import {
-  GiArtificialIntelligence
-} from "react-icons/gi";
-
-const TECHS = [
-  {
-    label: "Java",
-    color: "#f89820",
-    icon: <FaJava />
-  },
-  {
-    label: ".NET",
-    color: "#512BD4",
-    icon: <SiDotnet />
-  },
-  {
-    label: "QA / Testing",
-    color: "#22c55e",
-    icon: <SiTestinglibrary />
-  },
-  {
-    label: "DevOps",
-    color: "#326CE5",
-    icon: <FaDocker />
-  },
-  {
-    label: "AWS",
-    color: "#FF9900",
-    icon: <FaAws />
-  },
-  {
-    label: "Azure",
-    color: "#0078D4",
-    icon: <FaMicrosoft />
-  },
-  {
-    label: "Salesforce",
-    color: "#00A1E0",
-    icon: <SiSalesforce />
-  },
-  {
-    label: "MuleSoft",
-    color: "#00A1E0",
-    icon: <SiMulesoft />
-  },
-  {
-    label: "Data Engineering",
-    color: "#00BFFF",
-    icon: <MdDataObject />
-  },
-  {
-    label: "Data Science",
-    color: "#FF6F00",
-    icon: <MdOutlineAutoGraph />
-  },
-  {
-    label: "Machine Learning",
-    color: "#FF6F61",
-    icon: <GiArtificialIntelligence />
-  },
-  {
-    label: "Power BI",
-    color: "#F2C811",
-    icon: <FaChartPie />
-  }
-];
 
 const containerVariants = {
   hidden: {},
@@ -115,6 +30,7 @@ const cardVariants = {
 };
 
 export default function Technologies() {
+
   return (
     <section id="technologies" className="tech-section">
       {/* Background Effects */}
@@ -179,6 +95,7 @@ export default function Technologies() {
             <motion.div
               key={tech.label}
               className="tech-card"
+            
               variants={cardVariants}
               whileHover={{
                 y: -10,
@@ -237,6 +154,9 @@ export default function Technologies() {
               <span className="tc-label">
                 {tech.label}
               </span>
+              <div className="tc-view-more"   onClick={() => window.open(`/services/${tech.slug}`, "_blank")}>
+                View More About<br />{tech.label} <FiArrowRight />
+              </div>
             </motion.div>
           ))}
         </motion.div>

@@ -136,3 +136,132 @@
   z-index: 1;
   line-height: 1.5;
 }
+
+
+/* ==========================================
+   TABLET
+========================================== */
+@media (max-width: 992px) {
+  .sp-hero {
+    padding: 90px 0 70px;
+  }
+
+  .sp-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .sp-hero-right {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .sp-hero-title {
+    font-size: clamp(30px, 5vw, 48px);
+  }
+
+  .sp-hero-desc {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+@media (max-width: 768px) {
+  .sp-hero {
+    padding: 70px 0 60px;
+  }
+
+  .sp-hero-inner {
+    gap: 32px;
+  }
+
+  .sp-hero-left {
+    gap: 18px;
+  }
+
+  .sp-hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .sp-hero-desc {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .sp-hero-trust {
+    gap: 8px;
+  }
+
+  .sp-hero-trust span {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .sp-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sp-btn-primary,
+  .sp-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sp-stat-card {
+    padding: 24px 18px;
+  }
+
+  .sp-stat h3 {
+    font-size: 22px;
+  }
+
+  .sp-stat p {
+    font-size: 10px;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+@media (max-width: 480px) {
+  .sp-hero {
+    padding: 60px 0 50px;
+  }
+
+  .sp-hero-title {
+    font-size: 1.7rem;
+  }
+
+  .sp-hero-desc {
+    font-size: 14px;
+  }
+
+  .sp-stat-row {
+    gap: 12px;
+  }
+
+  .sp-stat h3 {
+    font-size: 18px;
+  }
+
+  .sp-stat p {
+    font-size: 9px;
+  }
+
+  .sp-stat-divider {
+    height: 28px;
+  }
+
+  .sp-stat-sub {
+    font-size: 11px;
+  }
+
+  .sp-badge {
+    font-size: 11px;
+  }
+}

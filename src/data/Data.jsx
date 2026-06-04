@@ -28,15 +28,37 @@ import {
 } from "react-icons/fa";
 
 
+
+import {
+  FaJava,
+  FaAws,
+  FaMicrosoft,
+  FaDocker
+} from "react-icons/fa";
+
+import {
+  SiMulesoft,
+  SiSalesforce,
+  SiTestinglibrary,
+  SiDotnet,
+} from "react-icons/si";
+
+import { FaChartPie } from "react-icons/fa";
+
+import {
+  MdDataObject,
+  MdOutlineAutoGraph
+} from "react-icons/md";
+
+import {
+  GiArtificialIntelligence
+} from "react-icons/gi";
+
+
 import { FiGlobe, FiShield, FiZap } from "react-icons/fi";
 
 import { MdVerifiedUser } from "react-icons/md";
-export const TECHS = [
-  { label: "Java", icon: "☕" }, { label: "Data Engineering", icon: "🗄️" }, { label: "QA / Testing", icon: "✅" },
-  { label: "DevOps", icon: "♾️" }, { label: "Data Science", icon: "📊" }, { label: "Machine Learning", icon: "🧠" },
-  { label: ".NET", icon: "🔷" }, { label: "Power BI", icon: "📈" }, { label: "MuleSoft", icon: "🔗" },
-  { label: "Salesforce", icon: "⚡" }, { label: "AWS / Azure", icon: "☁️" }, { label: "& More", icon: "➕" },
-];
+
 
 export const DEMO_STEPS = [
   { icon: "🏗️", t: "Understand Your Project Architecture", d: "We study your project structure and technical setup." },
@@ -433,3 +455,78 @@ export  const stagger = {
     }
   }
 };
+
+export const TECHS = [
+  {
+    label: "Java",
+    color: "#f89820",
+    icon: <FaJava />,
+    slug: "java-job-support"
+  },
+  {
+    label: ".NET",
+    color: "#512BD4",
+    icon: <SiDotnet />,
+    slug: "dotnet-job-support"
+  },
+  {
+    label: "QA / Testing",
+    color: "#22c55e",
+    icon: <SiTestinglibrary />,
+    slug: "qa-job-support"
+  },
+  {
+    label: "DevOps",
+    color: "#326CE5",
+    icon: <FaDocker />,
+    slug: "devops-job-support"
+  },
+  {
+    label: "AWS",
+    color: "#FF9900",
+    icon: <FaAws />,
+    slug: "aws-job-support"
+  },
+  {
+    label: "Azure",
+    color: "#0078D4",
+    icon: <FaMicrosoft />,
+    slug: "azure-job-support"
+  },
+  {
+    label: "Salesforce",
+    color: "#00A1E0",
+    icon: <SiSalesforce />,
+    slug: "salesforce-job-support"
+  },
+  {
+    label: "MuleSoft",
+    color: "#00A1E0",
+    icon: <SiMulesoft />,
+    slug: "mulesoft-job-support"
+  },
+  {
+    label: "Data Engineering",
+    color: "#00BFFF",
+    icon: <MdDataObject />,
+    slug: "data-engineer-job-support"
+  },
+  {
+    label: "Data Science",
+    color: "#FF6F00",
+    icon: <MdOutlineAutoGraph />,
+    slug: "data-science-job-support"
+  },
+  {
+    label: "Machine Learning",
+    color: "#FF6F61",
+    icon: <GiArtificialIntelligence />,
+    slug: "machine-learning-job-support"
+  },
+  {
+    label: "Power BI",
+    color: "#F2C811",
+    icon: <FaChartPie />,
+    slug: "power-bi-training"
+  }
+];

@@ -21,7 +21,7 @@ function ServiceCTC() {
           <button className="sp-btn-primary sp-btn-primary--lg">
             Schedule Free Consultation <ArrowRight size={16} />
           </button>
-          <a href="https://wa.me/917382727507" className="sp-btn-wa" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/917387563439" className="sp-btn-wa" target="_blank" rel="noopener noreferrer">
             <BsWhatsapp />
             WhatsApp Us
           </a>

@@ -493,3 +493,53 @@
 .tc-icon {
   transition: all 0.2s ease;
 }
+.tech-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.tc-view-more {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--card-color);
+
+  background: rgba(255, 255, 255, 0.95);
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hide existing content */
+.tech-card:hover .tc-icon,
+.tech-card:hover .tc-label,
+.tech-card:hover .tc-line,
+.tech-card:hover .tc-spark,
+.tech-card:hover .tc-halo {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show View More */
+.tech-card:hover .tc-view-more {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tc-view-more svg {
+  transition: transform 0.3s ease;
+}
+
+.tech-card:hover .tc-view-more svg {
+  transform: translateX(5px);
+}

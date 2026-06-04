@@ -2,6 +2,7 @@ import { ArrowRight, Clock, Phone, ShieldCheck, Zap } from 'lucide-react'
 import { SERVICES_PAGE_DATA } from '../../data/ServiceData';
 import { useParams } from 'react-router-dom';
 import "../../css/ServiceHero.css"
+import Counter from '../Counter';
 
 function ServiceHero() {
 
@@ -33,7 +34,10 @@ function ServiceHero() {
                         </div>
 
                         <div className="sp-hero-actions">
-                            <button className="sp-btn-primary">
+                            <button
+                                className="sp-btn-primary"
+                                onClick={() => window.location.href = "tel:+917387563439"}
+                            >
                                 Book Free Consultation <ArrowRight size={15} />
                             </button>
                             <button className="sp-btn-secondary">
@@ -46,9 +50,11 @@ function ServiceHero() {
                         <div className="sp-stat-card">
                             <div className="sp-stat-card-top" />
                             <div className="sp-stat-row">
-                                <div className="sp-stat"><h3>500+</h3><p>Guided</p></div>
+
+
+                                <div className="sp-stat"><Counter end={500} suffix="+" /><p>Guided</p></div>
                                 <div className="sp-stat-divider" />
-                                <div className="sp-stat"><h3>95%</h3><p>Satisfaction</p></div>
+                                <div className="sp-stat"><Counter end={95} suffix="%" /><p>Satisfaction</p></div>
                                 <div className="sp-stat-divider" />
                                 <div className="sp-stat"><h3>Free</h3><p>Demo Session</p></div>
                             </div>
