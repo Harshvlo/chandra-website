@@ -2,6 +2,7 @@ import "../../css/Technologies.css";
 import { motion } from "framer-motion";
 import { TECHS } from "../../data/Data";
 import { FiArrowRight } from "react-icons/fi";
+import {useNavigate} from "react-router-dom";
 
 
 const containerVariants = {
@@ -30,6 +31,7 @@ const cardVariants = {
 };
 
 export default function Technologies() {
+  const navigate = useNavigate();
 
   return (
     <section id="technologies" className="tech-section">
@@ -154,7 +156,7 @@ export default function Technologies() {
               <span className="tc-label">
                 {tech.label}
               </span>
-              <div className="tc-view-more"   onClick={() => window.open(`/services/${tech.slug}`, "_blank")}>
+              <div className="tc-view-more"   onClick={() => navigate(`/services/${tech.slug}`)}>
                 View More About<br />{tech.label} <FiArrowRight />
               </div>
             </motion.div>

@@ -9,7 +9,7 @@ import {
   FiArrowUpRight,
   FiShield,
 } from "react-icons/fi";
-import logo from "../assets/logo.png";
+import logo from "../assets/footer.png";
 import { Link } from "react-router-dom";
 
 const QUICK_LINKS = [
