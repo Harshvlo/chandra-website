@@ -116,7 +116,7 @@ export default function Footer() {
               <ul className="footer-contact-list">
                 <li>
                   <FiPhone className="footer-contact-icon" aria-hidden="true" />
-                  <a href="tel:+917387563439">+91 73875-63439, <br />+91 62606 77238 </a>
+                  <a href="tel:+917387563439">+91 73875-63439, <br />+91 62606-77238 </a>
 
                 </li>
                 <li>

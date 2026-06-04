@@ -20,11 +20,12 @@ import {
 // slug: "aws-job-support",
 // slug: "azure-job-support",
 // slug: "salesforce-job-support",
-// slug: "resume-services",
+// slug: "mulesoft-job-support",
 // slug: "data-engineer-job-support",
 // slug: "data-science-job-support",l̥
-// slug: "mulesoft-job-support",
+// slug: "machine-learning-job-support",
 // slug: "power-bi-training",
+// slug: "resume-services",
 
 export const SERVICES_PAGE_DATA = [
     {
