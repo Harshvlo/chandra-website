@@ -141,7 +141,7 @@ export default function Footer() {
           <div className="footer-disclaimer">
             <FiShield className="disclaimer-icon" aria-hidden="true" />
             <p>
-              Cloudffusion Technologies provides expert training, certification support, and career guidance services. We offer comprehensive assistance throughout the certification process and are committed to helping candidates achieve successful outcomes. Results may vary depending on individual engagement and certification provider requirements.
+            Cloudffusion Technologies provides expert IT training, certification support, interview preparation, job support, project assistance, and career guidance services. We offer comprehensive assistance throughout the certification process and are committed to helping candidates achieve successful outcomes through expert mentoring and dedicated support.
             </p>
           </div>
 
